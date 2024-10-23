@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="132378ce-2548-47a4-a556-35fae4976f7e" name="Changes" comment="commit and push">
+      <change beforePath="$PROJECT_DIR$/JAVA/AdvCalc.java" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA/AdvCalc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA/JAVA.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA/inheritance/Inheritance.java" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA/inheritance/Inheritance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA/src/Main.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {}
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Rahul-Sarang/java-labworks.git&quot;,
+    &quot;accountId&quot;: &quot;74c54e20-2f48-40ff-8f4e-94a05254f0bd&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2kgw6nJAeMUBlg9FywnF2iYiwYy" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AdvCalc.executor": "Debug",
+    "Application.CustomerException.executor": "Debug",
+    "Application.EmployeeManagementSystem.executor": "Run",
+    "Application.Inheritance.executor": "Run",
+    "Application.Interface.executor": "Run",
+    "Application.MethodOverloading.executor": "Debug",
+    "Application.Polymorphism.executor": "Run",
+    "Application.TryCatch.executor": "Run",
+    "Application.fibnoacciseries.executor": "Run",
+    "Application.fibonacciseries.executor": "Run",
+    "Application.frqcharstr.executor": "Run",
+    "Application.hw.executor": "Run",
+    "Application.matrixmulti.executor": "Debug",
+    "Application.palintrome.executor": "Debug",
+    "Application.polymorphism.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/arsra/PCode/FullStack",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.387" />
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-IU-242.20224.387" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="132378ce-2548-47a4-a556-35fae4976f7e" name="Changes" comment="" />
+      <created>1723718355699</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1723718355699</updated>
+      <workItem from="1723718356874" duration="924000" />
+      <workItem from="1723729688284" duration="1087000" />
+      <workItem from="1723732823669" duration="887000" />
+      <workItem from="1723738678887" duration="844000" />
+      <workItem from="1723742710069" duration="316000" />
+      <workItem from="1723743037975" duration="122000" />
+      <workItem from="1723743242991" duration="128000" />
+      <workItem from="1723743383206" duration="8000" />
+      <workItem from="1724144926268" duration="334000" />
+      <workItem from="1724349634235" duration="123000" />
+      <workItem from="1724433673726" duration="1957000" />
+      <workItem from="1724436977083" duration="531000" />
+      <workItem from="1724508533052" duration="810000" />
+      <workItem from="1724864726390" duration="2847000" />
+      <workItem from="1725036289998" duration="5591000" />
+      <workItem from="1725431653032" duration="1247000" />
+      <workItem from="1726589636840" duration="11000" />
+      <workItem from="1726589658477" duration="13000" />
+      <workItem from="1726589678880" duration="128000" />
+      <workItem from="1726590201634" duration="591000" />
+      <workItem from="1727336424392" duration="161000" />
+      <workItem from="1727886876348" duration="614000" />
+      <workItem from="1728486986909" duration="1950000" />
+      <workItem from="1728520257346" duration="1316000" />
+      <workItem from="1729286006964" duration="1254000" />
+      <workItem from="1729580871765" duration="416000" />
+      <workItem from="1729585994410" duration="49000" />
+      <workItem from="1729586127270" duration="1580000" />
+      <workItem from="1729618230838" duration="452000" />
+      <workItem from="1729620132294" duration="1006000" />
+      <workItem from="1729621306654" duration="93000" />
+      <workItem from="1729621710058" duration="133000" />
+      <workItem from="1729655131556" duration="976000" />
+      <workItem from="1729656123143" duration="181000" />
+      <workItem from="1729656699097" duration="323000" />
+    </task>
+    <task id="LOCAL-00001" summary="commit and push">
+      <option name="closed" value="true" />
+      <created>1723718649110</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1723718649110</updated>
+    </task>
+    <task id="LOCAL-00002" summary="commit and push">
+      <option name="closed" value="true" />
+      <created>1723718706697</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1723718706697</updated>
+    </task>
+    <task id="LOCAL-00003" summary="commit and push">
+      <option name="closed" value="true" />
+      <created>1723732428366</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1723732428366</updated>
+    </task>
+    <task id="LOCAL-00004" summary="commit and push">
+      <option name="closed" value="true" />
+      <created>1723743318532</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1723743318532</updated>
+    </task>
+    <task id="LOCAL-00005" summary="commit and push">
+      <option name="closed" value="true" />
+      <created>1724349667203</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1724349667203</updated>
+    </task>
+    <task id="LOCAL-00006" summary="commit and push">
+      <option name="closed" value="true" />
+      <created>1724349746855</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1724349746855</updated>
+    </task>
+    <task id="LOCAL-00007" summary="commit and push">
+      <option name="closed" value="true" />
+      <created>1724865384160</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1724865384160</updated>
+    </task>
+    <task id="LOCAL-00008" summary="commit and push">
+      <option name="closed" value="true" />
+      <created>1725037181975</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1725037181975</updated>
+    </task>
+    <task id="LOCAL-00009" summary="commit and push">
+      <option name="closed" value="true" />
+      <created>1725040184912</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1725040184912</updated>
+    </task>
+    <task id="LOCAL-00010" summary="commit and push">
+      <option name="closed" value="true" />
+      <created>1725041442438</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1725041442438</updated>
+    </task>
+    <task id="LOCAL-00011" summary="commit and push">
+      <option name="closed" value="true" />
+      <created>1728488130758</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1728488130758</updated>
+    </task>
+    <task id="LOCAL-00012" summary="commit and push">
+      <option name="closed" value="true" />
+      <created>1728488239915</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1728488239915</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit and push" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit and push" />
+  </component>
+</project>
