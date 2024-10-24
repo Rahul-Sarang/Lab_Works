@@ -13,10 +13,20 @@
 abstract class Shape {
     // Abstract method numberOfSides
     public abstract void numberOfSides();
+
+    public abstract boolean intersects(Rectangle bounds);
 }
 
 // Class Rectangle extending Shape
 class Rectangle extends Shape {
+    public Rectangle(int x, int y, int i, int i1) {
+        super();
+    }
+
+    public Rectangle() {
+
+    }
+
     // Implementation of abstract method
     @Override
     public void numberOfSides() {
