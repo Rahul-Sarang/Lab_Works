@@ -1,110 +1,63 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define MAX 10
+// Function for insertion sort
+void insort(int arr[], int n, int *count) {
+    int i, j, key;
 
-int visited[MAX];  // Array to track visited vertices
-int queue[MAX];    // Queue to store vertices
-int front = -1, rear = -1;  // Queue front and rear pointers
+    for (i = 1; i < n; i++) {
+        key = arr[i];
+        j = i - 1;
 
-// Graph node structure
-struct Node {
-    int data;
-    struct Node* next;
-};
-
-// Function to enqueue an element
-void insertq(int v) {
-    if (rear == MAX - 1) {
-        printf("Queue Overflow\n");
-        return;
-    }
-    if (front == -1) {
-        front = 0;
-    }
-    queue[++rear] = v;
-}
-
-// Function to dequeue an element
-int deleteq() {
-    if (front == -1) {
-        return -1;
-    }
-    int item = queue[front++];
-    if (front > rear) {
-        front = rear = -1;
-    }
-    return item;
-}
-
-// BFS function
-void bfs(int start, struct Node* adjList[]) {
-    insertq(start);
-    visited[start] = 1;
-    printf("%d ", start);
-
-    while (front != -1) {
-        int v = deleteq();
-
-        struct Node* temp = adjList[v];
-        while (temp != NULL) {
-            int w = temp->data;
-            if (visited[w] == 0) {
-                insertq(w);
-                visited[w] = 1;
-                printf("%d ", w);
-            }
-            temp = temp->next;
+        // Move elements of arr[0..i-1], that are greater than key, to one position ahead of their current position
+        while (j >= 0 && arr[j] > key) {
+            arr[j + 1] = arr[j];
+            j--;
+            (*count) += 2;  // Increment count for comparisons and assignments
         }
+        arr[j + 1] = key;
+        (*count) += 1; // Increment for the assignment of key
     }
-}
-
-// Function to create a new adjacency list node
-struct Node* createNode(int v) {
-    struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
-    newNode->data = v;
-    newNode->next = NULL;
-    return newNode;
-}
-
-// Function to add an edge to the graph
-void addEdge(struct Node* adjList[], int src, int dest) {
-    struct Node* newNode = createNode(dest);
-    newNode->next = adjList[src];
-    adjList[src] = newNode;
 }
 
 int main() {
-    int vertices, edges, startVertex;
-    printf("Enter the number of vertices: ");
-    scanf("%d", &vertices);
+    int i, n;
+    int count = 0; // Counter for time complexity
+    int space; // Space complexity
 
-    // Initialize adjacency list for each vertex
-    struct Node* adjList[vertices];
-    for (int i = 0; i < vertices; i++) {
-        adjList[i] = NULL;
-        visited[i] = 0;
+    // Input the size of the array
+    printf("Enter the size of the array: ");
+    if (scanf("%d", &n) != 1 || n <= 0) {
+        printf("Invalid size.\n");
+        return 1;  // Exit if input is invalid
+    }
+    
+    int ar[n];  // Declare the array (VLA)
+    space = sizeof(int) * n; // Count space for the array
+
+    // Input the elements of the array
+    printf("Enter the elements: ");
+    for (i = 0; i < n; i++) {
+        if (scanf("%d", &ar[i]) != 1) {
+            printf("Invalid input.\n");
+            return 1;  // Exit on invalid input
+        }
+        count += 2;  // Increment for input reading
     }
 
-    printf("Enter the number of edges: ");
-    scanf("%d", &edges);
-
-    // Add edges to the graph
-    for (int i = 0; i < edges; i++) {
-        int src, dest;
-        printf("Enter edge (source destination): ");
-        scanf("%d %d", &src, &dest);
-        addEdge(adjList, src, dest);
-        addEdge(adjList, dest, src); // For undirected graph, add both ways
+    // Call the insertion sort function
+    insort(ar, n, &count);
+    
+    // Print the sorted array
+    printf("Sorted array is:\n");
+    for (i = 0; i < n; i++) {
+        printf("%d ", ar[i]);
     }
+    printf("\n");
 
-    // Input start vertex
-    printf("Enter the start vertex for BFS: ");
-    scanf("%d", &startVertex);
-
-    // Perform BFS
-    printf("Breadth First Search starting from vertex %d:\n", startVertex);
-    bfs(startVertex, adjList);
-
+    // Print space and time complexities
+    printf("Space Complexity : %d bytes\n", space);
+    printf("Time Complexity : %d operations\n", count);
+    
     return 0;
 }
