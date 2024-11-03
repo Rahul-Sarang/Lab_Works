@@ -144,7 +144,7 @@ public class CustomerException {
         }
     }
 
-    public static void withdraw(int n, int[] accountNumbers, int[] balances) throws AccountNotFoundException, InsufficientFundsException, InvalidAmountException {
+    public static void withdraw(int n, int[] accountNumbers, int[] balances)throws AccountNotFoundException, InsufficientFundsException, InvalidAmountException {
         Scanner scan = new Scanner(System.in);
         int acno, flag = 0, withdrawAmount, pos = 0;
 
