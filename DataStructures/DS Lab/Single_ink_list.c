@@ -1,29 +1,29 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-// Define the structure for a node
 struct Node {
     int data;
     struct Node* link;
 };
-
-// Function to create a new node
 struct Node* create_node(int data) {
     struct Node* new_node = (struct Node*) malloc(sizeof(struct Node));
     new_node->data = data;
     new_node->link = NULL;
     return new_node;
 }
-
-// Function to insert a new node at the beginning
 void InsertBegin(struct Node** head, int data) {
     struct Node* new_node = create_node(data);
     new_node->link = *head;
     *head = new_node;
     printf("Node %d inserted at the beginning\n", data);
 }
-
-// Function to insert a new node at the end
+void Delete1st(struct Node** head) {
+    if (*head) {
+        struct Node* temp = *head;
+        *head = (*head)->link;
+        printf("Node %d deleted from the front\n", temp->data);
+        free(temp);
+    }
+}
 void InsertEnd(struct Node** head, int data) {
     struct Node* new_node = create_node(data);
     if (!*head) {
@@ -37,36 +37,6 @@ void InsertEnd(struct Node** head, int data) {
     }
     printf("Node %d inserted at the end\n", data);
 }
-
-// Function to insert a new node at a specific position
-void InsertAny(struct Node** head, int data, int position) {
-    struct Node* new_node = create_node(data);
-    if (position == 0) {
-        new_node->link = *head;
-        *head = new_node;
-    } else {
-        struct Node* temp = *head;
-        for (int i = 0; i < position - 1; i++) {
-            if (!temp->link) break;
-            temp = temp->link;
-        }
-        new_node->link = temp->link;
-        temp->link = new_node;
-    }
-    printf("Node %d inserted at position %d\n", data, position);
-}
-
-// Function to delete the first node
-void Delete1st(struct Node** head) {
-    if (*head) {
-        struct Node* temp = *head;
-        *head = (*head)->link;
-        printf("Node %d deleted from the front\n", temp->data);
-        free(temp);
-    }
-}
-
-// Function to delete the last node
 void DeleteEnd(struct Node** head) {
     if (*head) {
         if (!(*head)->link) {
@@ -84,8 +54,22 @@ void DeleteEnd(struct Node** head) {
         }
     }
 }
-
-// Function to delete a node at a specific position
+void InsertAny(struct Node** head, int data, int position) {
+    struct Node* new_node = create_node(data);
+    if (position == 0) {
+        new_node->link = *head;
+        *head = new_node;
+    } else {
+        struct Node* temp = *head;
+        for (int i = 0; i < position - 1; i++) {
+            if (!temp->link) break;
+            temp = temp->link;
+        }
+        new_node->link = temp->link;
+        temp->link = new_node;
+    }
+    printf("Node %d inserted at position %d\n", data, position);
+}
 void DeleteAny(struct Node** head, int position) {
     if (*head) {
         if (position == 0) {
@@ -108,8 +92,6 @@ void DeleteAny(struct Node** head, int position) {
         }
     }
 }
-
-// Function to display the linked list
 void display(struct Node* head) {
     struct Node* temp = head;
     while (temp) {
@@ -118,13 +100,10 @@ void display(struct Node* head) {
     }
     printf("NULL\n");
 }
-
-// Main function
 int main() {
     struct Node* head = NULL;
     int choice, data, position;
-
-    while (1) {
+  while (1) {
         printf("\nLinked List Menu\n");
         printf("1. Insert at beginning\n");
         printf("2. Insert at end\n");
@@ -136,7 +115,6 @@ int main() {
         printf("8. Exit\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
-
         switch (choice) {
             case 1:
                 printf("Enter data to insert: ");
